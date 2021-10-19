@@ -16,7 +16,7 @@ const Header = () => {
         sticky="top"
       >
         <Container>
-          <Navbar.Brand href="#home">Healthfirst Medical Clinic</Navbar.Brand>
+          <Navbar.Brand href="/home">Healthfirst Medical Clinic</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={HashLink} to="/home#home">

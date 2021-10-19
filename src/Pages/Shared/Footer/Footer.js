@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div className="footer-container ">
       <h2>Come To The Best Medical Facility In This City</h2>
       <h5>With All Modern Amenities Available</h5>
       <Link to="/login">
