@@ -2,13 +2,13 @@
 
 The Project name is: **Healthfirst Medical Center**
 
-The Live Site Link Is [here] ('https://healthfirst-medical-center.web.app')
+The Live Site Link Is here: ('https://healthfirst-medical-center.web.app')
 
-#Description#
+## Description
 
 _Healthfirst Medical Center is a Medical website which will help patients in various ways including finding the best doctors for treatment and booking appointments and tests for treatment._
 
-#Features and Functionality#
+## Features and Functionality
 
 - Visitor Friendly.
 - Easy navigation around the site.
