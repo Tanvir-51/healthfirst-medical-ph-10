@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import img1 from "../images/Healthcare-Software-Solution.jpg";
-import img2 from "../images/hospital-management-banner.jpg";
-import img3 from "../images/healthcare-banner.jpg";
+import img1 from "../images/Banner/Healthcare-Software-Solution.jpg";
+import img2 from "../images/Banner/hospital-management-banner.jpg";
+import img3 from "../images/Banner/healthcare-banner.jpg";
 
 const Banner = () => {
   return (
