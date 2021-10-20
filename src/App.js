@@ -9,6 +9,8 @@ import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Footer from "./Pages/Shared/Footer/Footer";
+import Doctors from "./Pages/Doctors/Doctors";
+import About from "./Pages/About/About";
 
 function App() {
   return (
@@ -26,8 +28,14 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/about">
+              <About></About>
+            </PrivateRoute>
             <PrivateRoute path="/details/:serviceId">
               <Booking></Booking>
+            </PrivateRoute>
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
