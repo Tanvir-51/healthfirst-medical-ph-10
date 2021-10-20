@@ -28,9 +28,9 @@
         },
         {
             "id": "5",
-            "name":"X-ray",
-            "image":"https://www.drugs.com/health-guide/images/ddca3f92-4b8e-4672-bb6b-f3594ad4e304.jpg","description":"An X-ray is a quick, painless test that produces images of the structures inside your body",
-            "details":"X-rays are a type of radiation called electromagnetic waves. X-ray imaging creates pictures of the inside of your body. The images show the parts of your body in different shades of black and white. ... The most familiar use of x-rays is checking for fractures (broken bones), but x-rays are also used in other ways"
+            "name":"ECG",
+            "image":"https://www.researchgate.net/profile/Rami-Khouzam/publication/322504203/figure/fig2/AS:591433463525376@1518020134297/Repeat-12-lead-EKG-showing-normal-sinus-rhythm_Q640.jpg","description":"ECG records the electrical signal from your heart to check for different heart conditions.",
+            "details":"An electrocardiogram (ECG) is a simple test that can be used to check your heart's rhythm and electrical activity. Sensors attached to the skin are used to detect the electrical signals produced by your heart each time it beats."
         },
         {
             "id": "6",
