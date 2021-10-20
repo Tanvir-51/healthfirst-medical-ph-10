@@ -7,7 +7,7 @@ const Service = ({ service }) => {
   const { id, name, image, description } = service; //destructuring service for single service
   return (
     <div className="col-lg-4 col-sm-6 col-12">
-      <Card className="service" style={{ width: "23rem" }}>
+      <Card className="service" style={{ width: "20rem" }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>

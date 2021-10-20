@@ -3,6 +3,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   sendEmailVerification,
+  updateProfile,
 } from "firebase/auth";
 import React, { useState } from "react";
 import useAuth from "../../../hooks/useAuth";
@@ -12,6 +13,9 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
+  const [name, setName] = useState("");
+  const [user, setUser] = useState({});
+
   const auth = getAuth();
 
   const { signInUsingGoogle } = useAuth();
@@ -42,7 +46,7 @@ const Login = () => {
   const processLogin = (email, password) => {
     signInWithEmailAndPassword(auth, email, password) // for existing user
       .then((result) => {
-        const user = result.user;
+        setUser(result.user);
       })
       .catch((error) => {
         setError(error.message);
@@ -52,14 +56,23 @@ const Login = () => {
   const registerNewUser = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password) //for registering new user
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        setUser(result.user);
+        setUserName();
+        window.location.reload();
+
         setError("");
         verifyEmail();
       })
       .catch((error) => {
         setError(error.message);
       });
+  };
+
+  const setUserName = () => {
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+  };
+  const handleName = (e) => {
+    setName(e.target.value);
   };
 
   const verifyEmail = () => {
