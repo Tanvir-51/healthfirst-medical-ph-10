@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Pages/Home/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NotFound from "./Pages/NotFound/NotFound";
-import Booking from "./Pages/Booking/Booking/Booking";
 import Login from "./Pages/Login/Login/Login";
 import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
@@ -11,6 +10,7 @@ import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Doctors from "./Pages/Doctors/Doctors";
 import About from "./Pages/About/About";
+import Details from "./Pages/Details/Details/Details";
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
               <About></About>
             </PrivateRoute>
             <PrivateRoute path="/details/:serviceId">
-              <Booking></Booking>
+              <Details></Details>
             </PrivateRoute>
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>

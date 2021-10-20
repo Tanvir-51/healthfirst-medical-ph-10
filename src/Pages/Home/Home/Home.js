@@ -4,6 +4,7 @@ import Locations from "../Locations/Locations";
 import Resources from "../Resources/Resources";
 import Services from "../Services/Services";
 
+// home page design
 const Home = () => {
   return (
     <div id="home">

@@ -17,7 +17,7 @@ const Login = () => {
   const { signInUsingGoogle } = useAuth();
 
   const toggleLogin = (e) => {
-    setIsLogin(e.target.checked);
+    setIsLogin(e.target.checked); //change from login to registration.
   };
 
   const handleEmailChange = (e) => {
@@ -29,18 +29,18 @@ const Login = () => {
   const handleRegistrations = (e) => {
     e.preventDefault();
     if (password.length < 6) {
-      setError("Password must be at least 6 characters long");
+      setError("Password must be at least 6 characters long"); //for length of minimum 6 character
       return;
     }
-    // if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-    //   setError("Password must contain 2 uppercase letter");
-    //   return;
-    // }
+    if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+      setError("Password must contain 2 uppercase letter"); // for two uppercase letters
+      return;
+    }
     isLogin ? processLogin(email, password) : registerNewUser(email, password);
   };
 
   const processLogin = (email, password) => {
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password) // for existing user
       .then((result) => {
         const user = result.user;
       })
@@ -50,7 +50,7 @@ const Login = () => {
   };
 
   const registerNewUser = (email, password) => {
-    createUserWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password) //for registering new user
       .then((result) => {
         const user = result.user;
         console.log(user);
@@ -67,6 +67,8 @@ const Login = () => {
       console.log(result);
     });
   };
+
+  //login with email, password and google sign in
 
   return (
     <div className="mt-5">

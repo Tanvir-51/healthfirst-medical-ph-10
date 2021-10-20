@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = ({ service }) => {
-  const { id, name, image, description, details } = service;
+  const { id, name, image, description } = service; //destructuring service for single service
   return (
     <div className="col-lg-4 col-sm-6 col-12">
       <Card className="service" style={{ width: "23rem" }}>

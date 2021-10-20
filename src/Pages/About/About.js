@@ -2,6 +2,7 @@ import React from "react";
 import { Accordion, Col, Container, Row } from "react-bootstrap";
 import img from "./images/national-cancer-institute-KrsoedfRAf4-unsplash.jpg";
 
+// about page
 const About = () => {
   return (
     <Container className="my-5">

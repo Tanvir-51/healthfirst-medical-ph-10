@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import { HashLink } from "react-router-hash-link";
 
+// for navbar and links
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
