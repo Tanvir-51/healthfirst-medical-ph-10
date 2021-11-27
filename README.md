@@ -15,3 +15,7 @@ _Healthfirst Medical Center is a Medical website which will help patients in var
 - Necessary services are easy to find.
 - Booking for appointments in a short time.
 - Anyone can create or sign in with their individual email and password.
+- Implemented two authentication system: email-password & Google sign-in
+- Responsive for mobile, tablet and desktop version.
+- Implemented React hook, context API, Firebase.
+
